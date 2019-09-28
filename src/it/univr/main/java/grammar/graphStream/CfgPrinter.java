@@ -124,6 +124,7 @@ public class CfgPrinter implements ViewerListener {
             }
         }
     }
+    
 
     public void setViewController(CfgViewerController cfgViewerController) {
         mCfgViewerController = cfgViewerController;
