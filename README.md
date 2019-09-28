@@ -1,6 +1,7 @@
 # dimp-static-analyzer
 
 You can run the Dump static analyzer as
+
 ```
 java -jar dimp-analyzer.jar
 ```
