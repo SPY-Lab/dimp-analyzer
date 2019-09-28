@@ -42,7 +42,7 @@ public class MainController implements Initializable {
 
     private Stage primaryStage;
     private File file;
-    private static final String CFG_VIEWER_PATH = "./cfg_viewer.fxml";
+    private static final String CFG_VIEWER_PATH = "cfg_viewer.fxml";
 
     public MainController(Stage primaryStage){
         this.primaryStage = primaryStage;

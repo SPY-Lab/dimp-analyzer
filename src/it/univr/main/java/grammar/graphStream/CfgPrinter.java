@@ -80,7 +80,7 @@ public class CfgPrinter implements ViewerListener {
         System.setProperty("org.graphstream.ui", "javafx");
         mGraph.setAttribute("ui.antialias");
         mGraph.setAttribute("ui.quality");
-        mGraph.setAttribute("ui.stylesheet", "url(src/it/univr/main/java/grammar/graphStream/graph_style.css)");
+        mGraph.setAttribute("ui.stylesheet", "url(grammar/graphStream/graph_style.css)");
         for (Node n : cfg.getNodes()){
             mGraph.addNode(n.getId());
             mGraph.getNode(n.getId()).setAttribute("ui.label", n.getId());
