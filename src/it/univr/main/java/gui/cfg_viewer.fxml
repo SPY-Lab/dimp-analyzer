@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane prefHeight="600.0" prefWidth="900.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CfgViewerController">
+
+    <top>
+        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="CFG" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20.0" top="20.0" />
+            </padding>
+            <font>
+                <Font size="42.0" />
+            </font>
+        </Label>
+    </top>
+
+    <center>
+
+    </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Store">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </padding></Label>
+            <ListView fx:id="storeListView" prefHeight="200.0" prefWidth="200.0" />
+            <Label text="Heap">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </padding></Label>
+            <ListView fx:id="heapListView" prefHeight="200.0" prefWidth="200.0" />
+             <Separator fx:id="evalSeparator" disable="true" prefWidth="200.0" />
+             <Label fx:id="evalLabel" disable="true" text="Explore evals">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" top="2.0" />
+               </padding></Label>
+             <TilePane fx:id="nodesTilePane" hgap="5.0" prefHeight="200.0" prefWidth="200.0" vgap="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></TilePane>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <Label fx:id="loadingLabel" text="Calculating Fix Point" textFill="#d30606" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </bottom>
+
+</BorderPane>

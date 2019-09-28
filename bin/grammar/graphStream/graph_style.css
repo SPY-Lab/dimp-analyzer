@@ -1,0 +1,37 @@
+node{
+    size: 30px,  30px;
+    text-color: white;
+    fill-color: #232323;
+    text-alignment: center;
+}
+
+graph{
+    fill-color: white;
+}
+
+edge{
+    text-alignment: above;
+    text-size: 12;
+    text-style: bold;
+    fill-color: #5d5d5d;
+}
+
+node.entry {
+    fill-color: green;
+}
+
+node.exit {
+    fill-color: red;
+}
+
+sprite.sprite_table {
+    size: 0px, 0px;
+    text-background-mode: rounded-box;
+    text-background-color: #d6d6d6;
+}
+
+sprite.eval_button {
+    size: 0px, 0px;
+    text-background-mode: rounded-box;
+    text-background-color: #0ad651;
+}
