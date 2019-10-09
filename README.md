@@ -1,6 +1,6 @@
 # DImp static analyzer (SAC 2020)
 
-You can run the Dump static analyzer as
+You can run the DImp static analyzer as
 
 ```
 java -jar dimp-analyzer.jar
