@@ -10,4 +10,35 @@ For optimization reasons, the control-flow graph generation works as follows. Gi
 
 ![Screenshot](code-gen.png)
 
+where the special symbol ![Screenshot](bool.png) has been introduced to model the fact that the execution may flow both to the ```true``` branch and the ```false``` branch. For example, if we consider the regular expressions of our running example:
+
+```
+x:=x+1; || while(y; || while(x>5){x:=x+1;y:=x};} || x:=x+1;(y:=10;x:=x+1;)*
+```
+the corresponding intermediate code is
+
+```
+	if (![Screenshot](bool.png)) {
+				if (![Screenshot](bool.png)) {
+					if (![Screenshot](bool.png)) {
+						x = x + 1
+					} else {
+						skip
+					}
+				} else {
+					while (x > 5) {
+						x = x + 1;
+						y = 10
+					}
+				}
+			} else {
+				x = x + 1;
+				while (![Screenshot](bool.png)) {
+					y = 10;
+					x = x + 1
+				}
+			}
+```
+
+
 At src/it/univr/test/eval-test you can find the eval tests proposed in the paper plus other examples.
