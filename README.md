@@ -28,7 +28,7 @@ if (*) {
 	} else {
 		while (x > 5) {
 			x = x + 1;
-			y = 10
+			y = x
 		}
 	}
 } else {
