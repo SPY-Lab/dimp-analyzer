@@ -40,5 +40,7 @@ if (*) {
 };
 ```
 
+On this intermediate code, we call the standard control-flow graph generation function, namely ```CFGDimp```, taking into account also the special boolean guard ![Screenshot](bool.png). In particular, when ![Screenshot](bool.png) is met, ```CFGDimp``` labels both the outgoing edges with ```true```. For instance, the control-flow graph associated to the program ```if(```![Screenshot](bool.png)```){a:=a+1}else{b:=b+1;}``` is the one reported in Fig.7a of the paper, while the control-flow graph associated to ```while(```![Screenshot](bool.png)```){a:=a+1};``` is the one reported in Fig.7b of the paper.
+The control-flow graph associated with the above code is the same reported in Fig.8.
 
 At src/it/univr/test/eval-test you can find the eval tests proposed in the paper plus other examples.
