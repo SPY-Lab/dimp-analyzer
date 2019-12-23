@@ -288,10 +288,10 @@ public class AbstractSemanticsTest {
         s = s.update("a", new FA("ci"));
         s = s.update("b", new FA("ao"));
 
-        s = AbstractSemantics.evaluate(createCommEdge("x = a.b;"), s);
+        s = AbstractSemantics.evaluate(createCommEdge("x = concat(a, b);"), s);
         assertEquals(s.getValue("x"), new FA("ciao"));
 
-        s = AbstractSemantics.evaluate(createCommEdge("x = \"\".a.b;"), s);
+        s = AbstractSemantics.evaluate(createCommEdge("x = concat(concat(\"\", a), b);"), s);
         assertEquals(s.getValue("x"), new FA("ciao"));
     }
 

@@ -28,13 +28,13 @@ exp:
  | '(' exp ')'                      #Parenthesis
     
  | INT                             #Int
- | 'len(' exp ')'                 #LenString
+ | 'length(' exp ')'                 #LenString
  | 'num(' exp ')'                 #CastStringToInt
  | exp '+' exp                   #Sum
  | exp '-' exp                   #Sot
  | exp '*' exp                   #Mol
  | 'new Number(' exp ')'          #ObjectNumber
- | exp '.indexOf(' exp ')'       #IndexOf
+ | 'indexOf(' exp ',' exp ')'       #IndexOf
 
  | BOOL                            #Booleans
  | exp '&&' exp                  #LogicAnd
@@ -46,7 +46,7 @@ exp:
  |  exp '<' exp                    #LessExp
  
  | STRING                                  #StringGeneric
- | exp '.' exp                           #Concat
+ | 'concat(' exp ',' exp ')'                           #Concat
  | 'substring(' exp ',' exp ',' exp ')' #Substrings
  | 'new String(' exp ')'                  #ObjectString
  | exp '.charAt(' exp ')'                #CharAt

@@ -72,12 +72,12 @@ public class State {
 	 * @return widening between the two states
 	 */
 	public State widening(State s) {
-		if ( isnull )
+		if (isnull)
 			return s;
-		if ( s.isnull)
+		if (s.isnull)
 			return this;
 
-		return new State( store.widening(s.store), heap.widening(s.heap));
+		return new State(store.widening(s.store), heap.widening(s.heap));
 	}
 
 	/**

@@ -1,9 +1,10 @@
-// Generated from Mudyn.g4 by ANTLR 4.7.2
+// Generated from Mudyn.g4 by ANTLR 4.4
 
 package grammar.antlr;
 
 
 import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
@@ -18,408 +19,408 @@ public class MudynBaseListener implements MudynListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProgramExecution(MudynParser.ProgramExecutionContext ctx) { }
+	@Override public void enterSubstrings(@NotNull MudynParser.SubstringsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProgramExecution(MudynParser.ProgramExecutionContext ctx) { }
+	@Override public void exitSubstrings(@NotNull MudynParser.SubstringsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogicOr(MudynParser.LogicOrContext ctx) { }
+	@Override public void enterGreaterExp(@NotNull MudynParser.GreaterExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogicOr(MudynParser.LogicOrContext ctx) { }
+	@Override public void exitGreaterExp(@NotNull MudynParser.GreaterExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSubstrings(MudynParser.SubstringsContext ctx) { }
+	@Override public void enterNegation(@NotNull MudynParser.NegationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSubstrings(MudynParser.SubstringsContext ctx) { }
+	@Override public void exitNegation(@NotNull MudynParser.NegationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterGreaterExp(MudynParser.GreaterExpContext ctx) { }
+	@Override public void enterStringGeneric(@NotNull MudynParser.StringGenericContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitGreaterExp(MudynParser.GreaterExpContext ctx) { }
+	@Override public void exitStringGeneric(@NotNull MudynParser.StringGenericContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterObjectNumber(MudynParser.ObjectNumberContext ctx) { }
+	@Override public void enterBooleans(@NotNull MudynParser.BooleansContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitObjectNumber(MudynParser.ObjectNumberContext ctx) { }
+	@Override public void exitBooleans(@NotNull MudynParser.BooleansContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNegation(MudynParser.NegationContext ctx) { }
+	@Override public void enterInt(@NotNull MudynParser.IntContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNegation(MudynParser.NegationContext ctx) { }
+	@Override public void exitInt(@NotNull MudynParser.IntContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStringGeneric(MudynParser.StringGenericContext ctx) { }
+	@Override public void enterConcat(@NotNull MudynParser.ConcatContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStringGeneric(MudynParser.StringGenericContext ctx) { }
+	@Override public void exitConcat(@NotNull MudynParser.ConcatContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIndexOf(MudynParser.IndexOfContext ctx) { }
+	@Override public void enterIdName(@NotNull MudynParser.IdNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIndexOf(MudynParser.IndexOfContext ctx) { }
+	@Override public void exitIdName(@NotNull MudynParser.IdNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterObjectBoolean(MudynParser.ObjectBooleanContext ctx) { }
+	@Override public void enterParenthesis(@NotNull MudynParser.ParenthesisContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitObjectBoolean(MudynParser.ObjectBooleanContext ctx) { }
+	@Override public void exitParenthesis(@NotNull MudynParser.ParenthesisContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBooleans(MudynParser.BooleansContext ctx) { }
+	@Override public void enterCastStringToInt(@NotNull MudynParser.CastStringToIntContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBooleans(MudynParser.BooleansContext ctx) { }
+	@Override public void exitCastStringToInt(@NotNull MudynParser.CastStringToIntContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEqualExp(MudynParser.EqualExpContext ctx) { }
+	@Override public void enterWhileStmt(@NotNull MudynParser.WhileStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEqualExp(MudynParser.EqualExpContext ctx) { }
+	@Override public void exitWhileStmt(@NotNull MudynParser.WhileStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLenString(MudynParser.LenStringContext ctx) { }
+	@Override public void enterLessExp(@NotNull MudynParser.LessExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLenString(MudynParser.LenStringContext ctx) { }
+	@Override public void exitLessExp(@NotNull MudynParser.LessExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSum(MudynParser.SumContext ctx) { }
+	@Override public void enterBlock(@NotNull MudynParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSum(MudynParser.SumContext ctx) { }
+	@Override public void exitBlock(@NotNull MudynParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMol(MudynParser.MolContext ctx) { }
+	@Override public void enterLogicAnd(@NotNull MudynParser.LogicAndContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMol(MudynParser.MolContext ctx) { }
+	@Override public void exitLogicAnd(@NotNull MudynParser.LogicAndContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInt(MudynParser.IntContext ctx) { }
+	@Override public void enterEval(@NotNull MudynParser.EvalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInt(MudynParser.IntContext ctx) { }
+	@Override public void exitEval(@NotNull MudynParser.EvalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConcat(MudynParser.ConcatContext ctx) { }
+	@Override public void enterLogicOr(@NotNull MudynParser.LogicOrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConcat(MudynParser.ConcatContext ctx) { }
+	@Override public void exitLogicOr(@NotNull MudynParser.LogicOrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIdName(MudynParser.IdNameContext ctx) { }
+	@Override public void enterComposition(@NotNull MudynParser.CompositionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIdName(MudynParser.IdNameContext ctx) { }
+	@Override public void exitComposition(@NotNull MudynParser.CompositionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParenthesis(MudynParser.ParenthesisContext ctx) { }
+	@Override public void enterObjectNumber(@NotNull MudynParser.ObjectNumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParenthesis(MudynParser.ParenthesisContext ctx) { }
+	@Override public void exitObjectNumber(@NotNull MudynParser.ObjectNumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCastStringToInt(MudynParser.CastStringToIntContext ctx) { }
+	@Override public void enterIndexOf(@NotNull MudynParser.IndexOfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCastStringToInt(MudynParser.CastStringToIntContext ctx) { }
+	@Override public void exitIndexOf(@NotNull MudynParser.IndexOfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCharAt(MudynParser.CharAtContext ctx) { }
+	@Override public void enterObjectBoolean(@NotNull MudynParser.ObjectBooleanContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCharAt(MudynParser.CharAtContext ctx) { }
+	@Override public void exitObjectBoolean(@NotNull MudynParser.ObjectBooleanContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterObjectString(MudynParser.ObjectStringContext ctx) { }
+	@Override public void enterBlockStmt(@NotNull MudynParser.BlockStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitObjectString(MudynParser.ObjectStringContext ctx) { }
+	@Override public void exitBlockStmt(@NotNull MudynParser.BlockStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLessExp(MudynParser.LessExpContext ctx) { }
+	@Override public void enterEqualExp(@NotNull MudynParser.EqualExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLessExp(MudynParser.LessExpContext ctx) { }
+	@Override public void exitEqualExp(@NotNull MudynParser.EqualExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSot(MudynParser.SotContext ctx) { }
+	@Override public void enterLenString(@NotNull MudynParser.LenStringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSot(MudynParser.SotContext ctx) { }
+	@Override public void exitLenString(@NotNull MudynParser.LenStringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogicAnd(MudynParser.LogicAndContext ctx) { }
+	@Override public void enterSum(@NotNull MudynParser.SumContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogicAnd(MudynParser.LogicAndContext ctx) { }
+	@Override public void exitSum(@NotNull MudynParser.SumContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterComposition(MudynParser.CompositionContext ctx) { }
+	@Override public void enterMol(@NotNull MudynParser.MolContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitComposition(MudynParser.CompositionContext ctx) { }
+	@Override public void exitMol(@NotNull MudynParser.MolContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfStmt(MudynParser.IfStmtContext ctx) { }
+	@Override public void enterIfStmt(@NotNull MudynParser.IfStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfStmt(MudynParser.IfStmtContext ctx) { }
+	@Override public void exitIfStmt(@NotNull MudynParser.IfStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWhileStmt(MudynParser.WhileStmtContext ctx) { }
+	@Override public void enterProgramExecution(@NotNull MudynParser.ProgramExecutionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWhileStmt(MudynParser.WhileStmtContext ctx) { }
+	@Override public void exitProgramExecution(@NotNull MudynParser.ProgramExecutionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlockStmt(MudynParser.BlockStmtContext ctx) { }
+	@Override public void enterCharAt(@NotNull MudynParser.CharAtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlockStmt(MudynParser.BlockStmtContext ctx) { }
+	@Override public void exitCharAt(@NotNull MudynParser.CharAtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSkip(MudynParser.SkipContext ctx) { }
+	@Override public void enterObjectString(@NotNull MudynParser.ObjectStringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSkip(MudynParser.SkipContext ctx) { }
+	@Override public void exitObjectString(@NotNull MudynParser.ObjectStringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignmentStmt(MudynParser.AssignmentStmtContext ctx) { }
+	@Override public void enterSkip(@NotNull MudynParser.SkipContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignmentStmt(MudynParser.AssignmentStmtContext ctx) { }
+	@Override public void exitSkip(@NotNull MudynParser.SkipContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEval(MudynParser.EvalContext ctx) { }
+	@Override public void enterSot(@NotNull MudynParser.SotContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEval(MudynParser.EvalContext ctx) { }
+	@Override public void exitSot(@NotNull MudynParser.SotContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlock(MudynParser.BlockContext ctx) { }
+	@Override public void enterAssignmentStmt(@NotNull MudynParser.AssignmentStmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlock(MudynParser.BlockContext ctx) { }
+	@Override public void exitAssignmentStmt(@NotNull MudynParser.AssignmentStmtContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitTerminal(TerminalNode node) { }
+	@Override public void visitTerminal(@NotNull TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitErrorNode(ErrorNode node) { }
+	@Override public void visitErrorNode(@NotNull ErrorNode node) { }
 }

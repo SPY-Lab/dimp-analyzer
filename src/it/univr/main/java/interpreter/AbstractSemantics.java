@@ -54,8 +54,9 @@ public class AbstractSemantics {
 		else if (e.getLabel() instanceof MudynParser.SkipContext)
 			return s;
 
-		else if (e.getLabel() == null )
+		else if (e.getLabel() == null ) {
 			return s;
+		}
 
 		throw new EvaluationException("Invalid edge label " + e.getLabelString());
 	}
