@@ -141,7 +141,7 @@ public class AbstractSemanticsTest {
         State s_1 = new State();
         s = s.update("x", new Interval("4", "4"));
         s_1 = s_1.update("a", new FA("ciao"));
-        s_1 = AbstractSemantics.evaluate(createCommEdge("x = len(a);"), s_1);
+        s_1 = AbstractSemantics.evaluate(createCommEdge("x = length(a);"), s_1);
         assertEquals(s.getValue("x"), s_1.getValue("x"));
     }
 
@@ -332,12 +332,12 @@ public class AbstractSemanticsTest {
     @Test
     public void evaluateEvalIf() throws EvaluationException {
         State s = new State();
-        s = s.update("a", new FA("if (x < 3) {x = x + 1;} else {x = x - 1;}"));
+        s = s.update("a", new FA("if (x < 3) {x = x + 1;} else {x = x + 2;}"));
         System.out.println(((FA) s.getValue("a")).stmSyn().toRegex());
         s = s.update("x", new Interval("2", "4"));
 
         s = AbstractSemantics.evaluate(createCommEdge("eval(a);"), s);
-        assertEquals(s.getValue("x"), new Interval("1", "5"));
+        assertEquals(s.getValue("x"), new Interval("3", "6"));
     }
 
     @Test

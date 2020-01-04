@@ -240,7 +240,9 @@ public class FA extends AbstractValue {
 	}
 
 	public Interval length() {
-		if (this.a.hasCycle()) {
+		if (a.isSingleString())
+			return new Interval(String.valueOf(a.getSingleString().length()),String.valueOf(a.getSingleString().length()));
+		else if (this.a.hasCycle()) {
 			TreeSet<Integer> lengths = new TreeSet<>();
 			for (State f : this.a.getFinalStates())
 				lengths.add(this.a.minimumDijkstra(f).size() - 1);
@@ -295,6 +297,7 @@ public class FA extends AbstractValue {
 	}
 
 	public Automaton stmSyn() {
-		return a.stmSyn();
+		Automaton aut = a.isSingleString() ? Automaton.makeRealAutomaton(a.getSingleString()) : a;
+		return aut.stmSyn();
 	}
 }

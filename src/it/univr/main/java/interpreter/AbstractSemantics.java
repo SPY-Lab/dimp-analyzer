@@ -116,15 +116,19 @@ public class AbstractSemantics {
 	public static ControlFlowGraph getEvalCfg(MudynParser.EvalContext comm, State s) throws EvaluationException{
 		FA value = (FA) evaluateExp(comm.exp(), s);
 		RegularExpression r = value.stmSyn().toRegex();
-//		System.err.println(r);
-//		RegexToCFG evalCfg = new RegexToCFG(r);
+		System.err.println(r);
+
 
 		MudynParser parserEval = new MudynParser(new CommonTokenStream(new MudynLexer(CharStreams.fromString(r.getProgram()))));
 		CFGGenerator cfggen = new CFGGenerator(parserEval.comm());
 		
 		ControlFlowGraph g = cfggen.getCFG();
 		
+		System.err.println(g);
+		
 		for (Edge e : g.getEdges()) {
+			System.err.println("err " + e.getLabelString());
+
 			if (!check(e.getLabelString())) {
 				MudynParser p = new MudynParser(new CommonTokenStream(new MudynLexer(CharStreams.fromString("skip;"))));
 				e.setParseContext(p.comm());

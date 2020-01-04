@@ -76,7 +76,7 @@ public class CfgPrinter implements ViewerListener {
      * Print the control flow graph.
      */
     private void print() {
-        Graph mGraph = new SingleGraph("Mudyn");
+        Graph mGraph = new SingleGraph("MuJS");
         System.setProperty("org.graphstream.ui", "javafx");
         mGraph.setAttribute("ui.antialias");
         mGraph.setAttribute("ui.quality");
