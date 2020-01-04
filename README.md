@@ -1,6 +1,6 @@
-# DImp static analyzer (SAC 2020)
+# MuJS static analyzer
 
-You can run the DImp static analyzer as
+You can run the MuJS static analyzer as
 
 ```
 java -jar dimp-analyzer.jar
